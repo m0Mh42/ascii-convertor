@@ -10,7 +10,7 @@ int main(){
     len = strlen(word);
 
     printf("Convert to (d: decimal, x: hex, o: octal): ");
-    scanf("%c", &mode);
+    mode = getchar();
 
     if (word[len-1] == '\n'){
         word[--len] = '\0';
